@@ -15,12 +15,14 @@ import {
 
 import Entype from "react-native-vector-icons/Entypo"
 import HomeScreen from './src/screens/home';
+import Post from './src/components/Post';
 
 const App: () => Node = () => {
 
   return (
     <SafeAreaView>
-      <HomeScreen/>
+      {/* <HomeScreen/> */}
+      <Post/>
     </SafeAreaView>
   );
 };

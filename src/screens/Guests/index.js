@@ -10,7 +10,7 @@ const GuestScreen = () => {
             <View style={styles.row}>
                 <View style={styles.f}>
                     <Text style={{fontWeight:"bold"}}>Adults</Text>
-                    <Text style={{color:"8d8d8d"}}>Ages 13 or above</Text>
+                    <Text style={{color:"#8d8d8d"}}>Ages 13 or above</Text>
                 </View>
                 <View style={{flexDirection:"row", alignItems: "center"}}>
                     <Pressable 
@@ -31,7 +31,7 @@ const GuestScreen = () => {
             <View style={styles.row}>
                 <View style={styles.f}>
                     <Text style={{fontWeight:"bold"}}>Children</Text>
-                    <Text style={{color:"8d8d8d"}}>Ages 2-12</Text>
+                    <Text style={{color:"#8d8d8d"}}>Ages 2-12</Text>
                 </View>
                 <View style={{flexDirection:"row", alignItems: "center"}}>
                     <Pressable 
@@ -52,7 +52,7 @@ const GuestScreen = () => {
             <View style={styles.row}>
                 <View style={styles.f}>
                     <Text style={{fontWeight:"bold"}}>Infants</Text>
-                    <Text style={{color:"8d8d8d"}}>Under 2</Text>
+                    <Text style={{color:"#8d8d8d"}}>Under 2</Text>
                 </View>
                 <View style={{flexDirection:"row", alignItems: "center"}}>
                     <Pressable 

@@ -4,19 +4,19 @@ export default [
         description: 'Tenerife, canary Island'
     },
     {
-        id: '0',
+        id: '1',
         description: 'Tenerife, Sainte-Marie'
     },
     {
-        id: '0',
+        id: '2',
         description: 'Tenerife, Cap Vert'
     },
     {
-        id: '0',
+        id: '3',
         description: 'Tenerife, Ile de la Réunion'
     },
     {
-        id: '0',
+        id: '4',
         description: 'Tananarive, Madagascar'
     }
 ]

@@ -20,16 +20,18 @@ import feed from './assets/data/feed';
 import SearchResultScreen from './src/screens/SearchResult';
 import DestinationSearchScreen from './src/screens/destinationSearch';
 import GuestScreen from './src/screens/Guests';
+import Router from './src/navigation/Router';
 const App: () => Node = () => {
 
   return (
-    <SafeAreaView>
+    <>
       {/* <HomeScreen/> */}
       {/* <Post/> */}
       {/* <SearchResultScreen/> */}
       {/* <DestinationSearchScreen/> */}
-      <GuestScreen/>
-    </SafeAreaView>
+      {/* <GuestScreen/> */}
+      <Router/>
+    </>
   );
 };
 

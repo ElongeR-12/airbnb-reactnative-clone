@@ -3,7 +3,7 @@ import { StyleSheet, Dimensions } from "react-native";
 const styles = StyleSheet.create({
     homeContainer:{
         // position: 'relative',
-        // yscrollable: 'scroll'
+        yscrollable: 'scroll'
     },
     image: {
         width: "100%",
@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     titleContainer:{
-        marginTop: 350,
-        marginBottom: 30
+        marginTop: 250,
+        marginBottom: 20
     },
     title: {
         fontSize:30,

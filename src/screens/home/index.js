@@ -20,6 +20,7 @@ const HomeScreen = () => {
                 <Pressable style={styles.button} onPress={()=> console.warn("Explore Btn clicked")}>
                     <Text style={styles.buttonText}>Je suis flexible</Text>
                 </Pressable>
+                
             </ImageBackground>
         </View>
     )

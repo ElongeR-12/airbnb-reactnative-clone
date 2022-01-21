@@ -85,7 +85,12 @@ const GuestScreen = () => {
                 marginHorizontal:20, 
                 borderRadius:10
                 }}
-                onPress={()=>navigation.navigate("Destination Search")}
+                onPress={()=>navigation.navigate("Home",{
+                    screen: "Explore",
+                    params: {
+                        screen: "SearchResults",
+                    },
+                })}
             >
                 <Text 
                 style={{

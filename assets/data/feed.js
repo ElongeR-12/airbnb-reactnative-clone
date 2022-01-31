@@ -8,7 +8,11 @@ export default [
         bedroom: 1,
         oldPrice: 25,
         newPrice: 20,
-        totalPrices: 120
+        totalPrices: 120,
+        coordinate: {
+            latitude: 28.3915637,
+            longitude: -16.6291304,
+          },
     },
     {
         id:'1',
@@ -19,7 +23,11 @@ export default [
         bedroom: 1,
         oldPrice: 25,
         newPrice: 20,
-        totalPrices: 120
+        totalPrices: 120,
+        coordinate: {
+            latitude: 28.4815637,
+            longitude: -16.2291304,
+          },
     },
     {
         id:'2',
@@ -30,7 +38,11 @@ export default [
         bedroom: 1,
         oldPrice: 25,
         newPrice: 20,
-        totalPrices: 120
+        totalPrices: 120,
+        coordinate: {
+            latitude: 28.2515637,
+            longitude: -16.3991304,
+          },
     },
     {
         id:'3',
@@ -41,7 +53,11 @@ export default [
         bedroom: 1,
         oldPrice: 25,
         newPrice: 20,
-        totalPrices: 120
+        totalPrices: 120,
+        coordinate: {
+            latitude: 28.4815637,
+            longitude: -16.2991304,
+          },
     },
     {
         id:'4',
@@ -52,7 +68,11 @@ export default [
         bedroom: 1,
         oldPrice: 25,
         newPrice: 20,
-        totalPrices: 120
+        totalPrices: 120,
+        coordinate: {
+            latitude: 27.4815637,
+            longitude: -16.2991304,
+          },
     },
     {
         id:'5',
@@ -63,6 +83,10 @@ export default [
         bedroom: 1,
         oldPrice: 25,
         newPrice: 20,
-        totalPrices: 120
+        totalPrices: 120,
+        coordinate: {
+            latitude: 29.4815637,
+            longitude: -16.2991304,
+          },
     }
 ]

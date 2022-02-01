@@ -9,10 +9,10 @@ const SearchResultMaps = () => {
   const width = useWindowDimensions().width;
   const flatlist = useRef();
   const map = useRef();
-  const viewConfig = useRef({itemVisiblePercentThreshold: 70});
-  const onViewChanged = useRef(({viewableItems})=>{
+  const viewConfig = useRef({itemVisiblePercentThreshold: 70, minimumViewTime: 300 });
+  const onViewChanged = useRef(async ({viewableItems})=>{
     if(viewableItems.length > 0){
-      const selectedPlace = viewableItems[0].item;
+      const selectedPlace = await viewableItems[0].item;
       console.log(selectedPlace);
       setSelectedPlaceId(selectedPlace.id)
     }

@@ -3,9 +3,11 @@ import { View, Text, ImageBackground, Pressable } from 'react-native'
 import styles from './styles'
 import Fontisto from "react-native-vector-icons/Fontisto"
 import { useNavigation } from '@react-navigation/native'
+import { ScrollView } from 'react-native-gesture-handler'
 const HomeScreen = () => {
     const navigation = useNavigation();
     return (
+        <ScrollView>
         <View style={styles.homeContainer}>
             
             <ImageBackground source={require('../../../assets/images/imagebg.jpg')} style={styles.image}>
@@ -23,6 +25,7 @@ const HomeScreen = () => {
                 
             </ImageBackground>
         </View>
+        </ScrollView>
     )
 }
 

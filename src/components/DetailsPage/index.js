@@ -1,17 +1,9 @@
-import { useNavigation } from '@react-navigation/native'
 import React from 'react'
-import { View, Image, Text, Pressable} from 'react-native'
+import { View, Image, Text} from 'react-native'
 import styles from './styles'
-
-const Post = ({post}) => {
-    const navigation = useNavigation();
-    const goToPageDetails = ()=>{
-        navigation.navigate('Details', {postId: post.id})
-    }
+const DetailPage = ({post}) => {
     return (
-        <Pressable 
-            onPress = {goToPageDetails}
-        style={styles.container}>
+        <View style={styles.container}>
             <Image style={styles.image} source={{ uri: post.image}}/>
             <Text style={styles.bedrooms}>
                 {post.bed} bed {post.bedroom} bedroom
@@ -25,8 +17,9 @@ const Post = ({post}) => {
                 / night
             </Text>
             <Text style={styles.totalPrices}>${post.totalPrices} total</Text>
-        </Pressable>
+            <Text>{post.description} total</Text>
+        </View>
     )
 }
 
-export default Post
+export default DetailPage

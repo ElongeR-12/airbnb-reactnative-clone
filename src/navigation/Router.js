@@ -2,6 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'
 import React from 'react'
 import DestinationSearchScreen from '../screens/destinationSearch';
+import DrawerScreen from '../screens/DrawerScreen';
 import GuestScreen from '../screens/Guests';
 import PostScreen from '../screens/PostScreen';
 import HomeTabNavigator from './HomeTabNavigator';
@@ -37,6 +38,14 @@ const Router = () => {
                 component={PostScreen}
                 options={{
                     title: 'Book'
+                }}
+               />
+               <Stack.Screen 
+                name={"Drawer"}
+                component={DrawerScreen}
+                options={{
+                    title: 'Drawer',
+                    headerShown: false,
                 }}
                />
            </Stack.Navigator>

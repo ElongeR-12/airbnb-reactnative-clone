@@ -13,8 +13,8 @@ const DestinationSearchScreen = () => {
                     placeholder='où alllez-vous?'
                     onPress={(data, details = null) => {
                     // 'details' is provided when fetchDetails = true
-                    console.log(data, details);
-                    navigation.navigate("Guests");
+                    console.log(data, details, "la ville", data.terms[0].value);
+                    navigation.navigate("Drawer",{city: data.terms[0].value});
                     }}
                     fetchDetails
                     style={{

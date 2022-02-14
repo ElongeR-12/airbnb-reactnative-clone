@@ -10,17 +10,21 @@ import HomeScreen from '../screens/home';
 import ExploreNavigator from './ExploreNavigator'
 import SearchResultMaps from '../screens/SearchResultMap'
 import PostScreen from '../screens/PostScreen'
+import DrawerScreen from '../screens/DrawerScreen'
 const Tab = createBottomTabNavigator();
 const HomeTabNavigator = () => {
     return (
         <Tab.Navigator
             screenOptions={{
                 tabBarActiveTintColor: "#f15454",
+                headerShown: false
             }}
         >
             <Tab.Screen
                 name={"Explore"}
                 component={ExploreNavigator} 
+                // component={DrawerScreen} 
+                labelStyle={{fontWeight: "bold", fontSize: 30}}
                 options={{
                     tabBarIcon: ({color}) => (
                         <Fontisto name="search" size={25} color={color}/>

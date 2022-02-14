@@ -3,7 +3,7 @@ import { StyleSheet, Dimensions } from "react-native";
 const styles = StyleSheet.create({
     homeContainer:{
         // position: 'relative',
-        yscrollable: 'scroll'
+        // yscrollable: 'scroll'
     },
     image: {
         width: "100%",

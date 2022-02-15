@@ -3,8 +3,8 @@ import React from 'react'
 
 const Messages = () => {
   return (
-    <View>
-      <Text>Vous n'avez pas de nouveau message</Text>
+    <View style={{padding: 30, backgroundColor:"#fff"}}>
+      <Text style={{fontSize:20}}>Vous n'avez pas de nouveau message</Text>
     </View>
   )
 }

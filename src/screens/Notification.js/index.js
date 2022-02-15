@@ -3,8 +3,8 @@ import React from 'react'
 
 const Notifications = () => {
   return (
-    <View>
-      <Text>Vous êtes à jour</Text>
+    <View style={{padding: 30,backgroundColor:"#fff"}}>
+      <Text style={{fontSize:20}}>Vous êtes à jour</Text>
     </View>
   )
 }

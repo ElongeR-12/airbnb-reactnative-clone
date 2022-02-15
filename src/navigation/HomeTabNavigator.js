@@ -1,6 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import React from 'react'
-import { View, Text } from 'react-native'
 import Fontisto from 'react-native-vector-icons/Fontisto'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
@@ -8,12 +7,8 @@ import Feather from 'react-native-vector-icons/Feather'
 import EvilIcons from 'react-native-vector-icons/EvilIcons'
 import HomeScreen from '../screens/home';
 import ExploreNavigator from './ExploreNavigator'
-import SearchResultMaps from '../screens/SearchResultMap'
-import PostScreen from '../screens/PostScreen'
-import DrawerScreen from '../screens/DrawerScreen'
 import Favoris from '../screens/Favoris'
 import Voyages from '../screens/Voyages'
-import Messages from '../screens/Messages'
 import MessagesTabNavigators from './MessagesTabNavigators'
 const Tab = createBottomTabNavigator();
 const HomeTabNavigator = () => {
@@ -21,7 +16,11 @@ const HomeTabNavigator = () => {
         <Tab.Navigator
             screenOptions={{
                 tabBarActiveTintColor: "#f15454",
-                headerShown: false
+                tabBarContainer: {padding: 10},
+                tabBarLabelStyle:{fontWeight: "normal", fontSize:15, marginBottom: 5},
+                tabBarStyle:{height: 60, padding: 5},
+                headerShown: false,
+                headerTitleStyle:{lineHeight:30, fontSize:30, fontWeight: "bold", color: "black"},
             }}
         >
             <Tab.Screen

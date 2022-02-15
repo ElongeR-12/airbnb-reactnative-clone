@@ -74,7 +74,6 @@ const GuestScreen = () => {
                     </View>
                 </View>
             </View>
-            {/* <Text>Search</Text> */}
             <Pressable 
             style={{
                 marginBottom: 20, 

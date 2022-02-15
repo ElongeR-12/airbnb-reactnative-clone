@@ -11,6 +11,10 @@ import ExploreNavigator from './ExploreNavigator'
 import SearchResultMaps from '../screens/SearchResultMap'
 import PostScreen from '../screens/PostScreen'
 import DrawerScreen from '../screens/DrawerScreen'
+import Favoris from '../screens/Favoris'
+import Voyages from '../screens/Voyages'
+import Messages from '../screens/Messages'
+import MessagesTabNavigators from './MessagesTabNavigators'
 const Tab = createBottomTabNavigator();
 const HomeTabNavigator = () => {
     return (
@@ -33,7 +37,7 @@ const HomeTabNavigator = () => {
            /> 
            <Tab.Screen
                 name={"Saved"}
-                component={HomeScreen} 
+                component={Favoris} 
                 options={{
                     tabBarIcon: ({color}) => (
                         <FontAwesome name="heart-o" size={25} color={color}/>
@@ -42,7 +46,7 @@ const HomeTabNavigator = () => {
            /> 
            <Tab.Screen
                 name={"Airbnb"}
-                component={HomeScreen} 
+                component={Voyages} 
                 options={{
                     tabBarIcon: ({color}) => (
                         <FontAwesome5 name="airbnb" size={25} color={color}/>
@@ -50,12 +54,13 @@ const HomeTabNavigator = () => {
                 }}
            /> 
            <Tab.Screen
-                name={"Messages"}
-                component={HomeScreen}
+                name={"Boite de réception"}
+                component={MessagesTabNavigators}
                 options={{
                     tabBarIcon: ({color}) => (
                         <Feather name="message-square" size={25} color={color}/>
-                    )
+                    ),
+                    headerShown: true
                 }}
            /> 
            <Tab.Screen

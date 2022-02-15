@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image, Text} from 'react-native'
+import { View, Image, Text, Pressable} from 'react-native'
 import styles from './styles'
 const DetailPage = ({post}) => {
     return (
@@ -18,6 +18,11 @@ const DetailPage = ({post}) => {
             </Text>
             <Text style={styles.totalPrices}>${post.totalPrices} total</Text>
             <Text>{post.description} total</Text>
+            <Pressable
+                style={{position:"absolute", right:3, bottom:2, zIndex:100, backgroundColor: "#e80784", width: "30%", padding: 10, borderRadius: 5}}
+            >
+                <Text style={{color: "white", fontSize: 15, fontWeight: "bold", textAlign:"center"}}>Reservez</Text>
+            </Pressable>
         </View>
     )
 }

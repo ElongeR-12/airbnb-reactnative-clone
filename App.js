@@ -12,7 +12,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 
-
+import { withAuthenticator } from 'aws-amplify-react-native'
 import Entype from "react-native-vector-icons/Entypo"
 import HomeScreen from './src/screens/home';
 import Post from './src/components/Post';
@@ -35,4 +35,4 @@ const App: () => Node = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);

@@ -2,16 +2,12 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        padding:5,        
-        height: 120,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 5,
-        },
-        shadowOpacity: 0.34,
-        shadowRadius: 6.27,
-        elevation: 10,
+        // padding:15,
+        paddingBottom:15, 
+        // paddingRight: 15,
+        marginRight: 10,
+        // paddingTop: -,       
+        height: 125
     },
     innerContainer:{
         flexDirection: "row",

@@ -11,7 +11,20 @@ const PostCarouselItem = ({post}) => {
     return (
         <Pressable 
         onPress={goToDetails}
-        style={[styles.container, {width: width - 60}]}>
+        style={[styles.container, {width: width - 60}, 
+            {
+                borderBottomWidth: 10,
+                // paddingBottom: -8,
+          borderRightWidth: 7,
+          borderRadius: 15,
+          borderColor: '#c71585',
+          shadowColor: '#c71585',
+          shadowOffset: { width: 0, height: 2},
+          shadowOpacity: 0.5,
+          shadowRadius: 2,
+          elevation: 5,
+            }
+        ]}>
             <View style={styles.innerContainer}>
                 <Image style={styles.image} source={{ uri: post.image}}/>
                 <View style={{flex: 1, marginHorizontal: 10}}>

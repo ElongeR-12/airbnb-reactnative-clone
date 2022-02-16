@@ -18,15 +18,15 @@ const Categories = ({text1, text2, uri}) => {
           padding:10
         },
         {
-          borderWidth: 1,
-          borderRadius: 4,
-          borderColor: '#ddd',
-          borderBottomWidth: 0,
-          shadowColor: '#000',
-          shadowOffset: { width: 0, height: 2 },
-          shadowOpacity: 0.2,
-          shadowRadius: 3,
-          elevation: 3,
+          borderBottomWidth: 5,
+          borderRightWidth: 5,
+          borderRadius: 10,
+          borderColor: '#C5CBCA',
+          shadowColor: '#C5CBCA',
+          shadowOffset: { width: 0, height: 5 },
+          shadowOpacity: 0.5,
+          shadowRadius: 1,
+          elevation: 5,
         }
       ]}
       onPress={()=>navigation.navigate("Guests")}

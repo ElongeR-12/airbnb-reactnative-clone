@@ -2,7 +2,7 @@ import { View, Text, Pressable } from 'react-native'
 import React from 'react'
 import { Auth } from 'aws-amplify';
 const ProfileScreen = () => {
-    const lougout = async () =>{
+    const logout = async () =>{
         try {
             await Auth.signOut();
         } catch (error) {
@@ -27,7 +27,7 @@ const ProfileScreen = () => {
             height: 40, 
             backgroundColor: '#c3c3c3'
         }}
-        onPress={lougout}
+        onPress={logout}
       >
           <Text>Loug out</Text>
       </Pressable>

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "airbnbreactnativeclo",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\rariv\\OneDrive\\Images\\project\\airbnb-reactnative-clone\\amplify\\backend\\api\\airbnbreactnativeclo\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-02-16T21:01:22.151Z",
+      "keyDescription": ""
+    }
+  }
+}

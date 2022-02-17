@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Image, Text, Pressable} from 'react-native'
 import styles from './styles'
-const DetailPage = ({post}) => {
+const DetailPage = ({ post }) => {
     return (
         <View style={styles.container}>
             <Image style={styles.image} source={{ uri: post.image}}/>
@@ -16,7 +16,7 @@ const DetailPage = ({post}) => {
                 <Text style={styles.price}>  ${post.newPrice}</Text>
                 / night
             </Text>
-            <Text style={styles.totalPrices}>${post.totalPrices} total</Text>
+            <Text style={styles.totalPrices}>${post.newPrice * 7} total</Text>
             <Text>{post.description} total</Text>
             <Pressable
                 style={{position:"absolute", right:3, bottom:2, zIndex:100, backgroundColor: "#e80784", width: "30%", padding: 10, borderRadius: 5}}

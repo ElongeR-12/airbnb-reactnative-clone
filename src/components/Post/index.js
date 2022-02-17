@@ -24,7 +24,7 @@ const Post = ({post}) => {
                 <Text style={styles.price}>  ${post.newPrice}</Text>
                 / night
             </Text>
-            <Text style={styles.totalPrices}>${post.totalPrices} total</Text>
+            <Text style={styles.totalPrices}>${post.newPrice * 7} total</Text>
         </Pressable>
     )
 }

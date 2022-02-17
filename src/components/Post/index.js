@@ -3,7 +3,7 @@ import React from 'react'
 import { View, Image, Text, Pressable} from 'react-native'
 import styles from './styles'
 
-const Post = ({post}) => {
+const Post = ({ post }) => {
     const navigation = useNavigation();
     const goToPageDetails = ()=>{
         navigation.navigate('Details', {postId: post.id})

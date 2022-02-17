@@ -7,7 +7,7 @@ import App from './App';
 import {name as appName} from './app.json';
 import Amplify from 'aws-amplify'
 import awsconfig from './src/aws-exports'
-Amplify.configure({
+Amplify.configure({...awsconfig,
     Auth: {
         // REQUIRED - Amazon Cognito Identity Pool ID
         identityPoolId: 'eu-central-1:be5cc3c6-e1b3-486a-a0f7-7c6913e2993d', 

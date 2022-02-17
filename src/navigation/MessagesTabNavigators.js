@@ -15,13 +15,14 @@ const MessagesTabNavigators = () => {
             },
             tabBarLabelStyle: { 
                 fontSize: 18,
-                textTransform:"capitalize" 
+                textTransform:"capitalize",
             },
             tabBarIndicatorContainerStyle:{
                 width: Dimensions.get("screen").width - 20,
                 marginRight: 10,
                 marginLeft: 10,
                 borderBottomWidth: 1,
+                borderBottomColor:"#C5CBCA",
             },
         }}
     >
